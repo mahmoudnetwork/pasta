@@ -1,0 +1,605 @@
+body{
+    height: 2500px;
+}
+::selection{
+    background-color: #252B33;
+}
+/* ----------------------------- Start Header------------------------- */
+.header{
+    width: 100%;
+    height:100px;
+}
+.header .logo{
+    width: 20%;
+    float: left;
+    
+} 
+.header .logo img{
+    width: 200px;
+    height: 100%;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+.header .navbar{
+    width: 80%;
+    height: 100%;
+    float: left;
+}
+.header .navbar a{
+    text-decoration: none;
+    color: #000;
+    padding: 15px;
+    font-weight: bold;
+    transition: all 1s ease-in-out;
+}
+.header .navbar ul{
+    list-style-type: none;
+    margin: 50px 0 10px 300px; 
+    
+}
+.header .navbar li{
+    display: inline-block;
+    padding: 20px;
+    text-transform: uppercase;
+}
+.header .navbar a:hover{
+    background-color: #FF5A00;
+    color: #fff;
+    border-radius: 5px;
+    width: 100px;
+    animation:viperation .9s;
+}
+@keyframes viperation {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scaleX(1.25) scaleY(0.75);
+  }
+  40% {
+    transform: scaleX(0.75) scaleY(1.25);
+  }
+  60% {
+    transform: scaleX(1.15) scaleY(0.85);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* ----------------------------- End Header------------------------- */
+.slider{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+.slider .content{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.slider .content h3{
+    color: #CF101F;
+    margin: 50px 0 20px 50px;
+     font-size: 72px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family:Chiller;
+}
+.slider .content p{
+    margin: 30px 0 30px 50px;
+    color: #555252;
+    line-height: 1.9;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.slider .content .pic{
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+.slider .pic{
+    width: 25%;
+    position: absolute;
+    right: 180;
+    bottom: 130;
+    transform: scale(1);
+    transition: all 3s ease-in-out;
+}
+.slider .pic:hover{
+    transform: scale(1.3);
+}
+.bestfood{
+    width: 100%;
+    height: 450px;
+    background-image: url("www3.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.bestfood h3{
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family:Andalus;
+}
+.bestfood h3::before{
+    content: url("rectangle.png");
+    position: relative;
+    top: -10;
+    margin-right: 10px;
+}
+.bestfood h3::after{
+    content: url("rectangle.png");
+    position: relative;
+    top: -10;
+    margin-left: 10px;
+}
+.food{
+    overflow: hidden;
+}
+.food >div{
+    float: left;
+    width: 33.33333%;
+}
+.food >div img{
+      width: 70%;
+    margin-left: 40px;
+    border-bottom-left-radius: 120px;
+    border-top-right-radius: 120px; 
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px; 
+    transition: all 0.7s ease;
+}
+.food >div img:hover{
+    border-top-left-radius: 120px; 
+    border-bottom-right-radius: 120px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.booking{
+    width: 100%;
+    height: 400px;
+}
+.booking h3{
+    color: #CF101F;
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family:Andalus;
+    letter-spacing: 8px;
+}
+.booking h3::before{
+    content: url("rectangle.png");
+    position: relative;
+    top: -10;
+    margin-right: 20px;
+}
+.booking h3::after{
+    content: url("rectangle.png");
+    position: relative;
+    top: -10;
+    margin-left: 20px;
+}
+.booking input{
+    margin: 10px auto;
+    width: 30%;
+    height: 70px;
+    margin-left: 25px;
+    padding: 10px;
+    background-color: #383636;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family:Andalus;
+    font-size: 20px;
+    color: #fff;
+    opacity: .8;
+    
+}
+.booking input:hover{
+    border: 2px solid #FF5A00;
+    opacity: 1;  
+}
+.pic1{
+    background-image: url(ee.png);
+    background-repeat:no-repeat; background-position:360px 10px;
+}
+.pic2{
+    background-image: url(1481841275_icon-6-mail-envelope-closed.png);
+    background-repeat:no-repeat; background-position:330px 2px;
+}
+.pic3{
+    background-image: url(dd.png);
+    background-repeat:no-repeat; background-position:350px 7px;
+}
+.pic4{
+    background-image: url(dd.png);
+    background-repeat:no-repeat; background-position:350px 7px;
+}
+.pic5{
+    background-image: url(1481841343_users-10.png);
+    background-repeat:no-repeat; background-position:330px 2px;
+}
+.booking button{
+   width: 70%;
+  height: 70px;
+  text-align: center;
+  margin-left: 216px;
+  margin-top: 24px;
+  border: none;
+  background-color: #aaa;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
+    /*border-radius: 10px;
+    box-shadow: 0px 5px 0px #C84D29;*/
+    cursor: pointer;
+   transition: all 2s ease-in-out;
+}
+.booking button:hover{
+    /*animation: hvr-wobble-top .9s;*/
+}
+
+@keyframes hvr-wobble-top {
+  16.65% {
+    -webkit-transform: skew(-12deg);
+    transform: skew(-12deg);
+  }
+  33.3% {
+    -webkit-transform: skew(10deg);
+    transform: skew(10deg);
+  }
+  49.95% {
+    -webkit-transform: skew(-6deg);
+    transform: skew(-6deg);
+  }
+  66.6% {
+    -webkit-transform: skew(4deg);
+    transform: skew(4deg);
+  }
+  83.25% {
+    -webkit-transform: skew(-2deg);
+    transform: skew(-2deg);
+  }
+  100% {
+    -webkit-transform: skew(0);
+    transform: skew(0);
+  }
+}
+.about{
+    width: 100%;
+    height: 400px;
+}
+.about h3{
+    color: #CF101F;
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family:Andalus;
+    letter-spacing: 8px;
+}
+.about h3::before{
+    content: url("rectangle.png");
+    position: relative;
+    top: -10;
+    margin-right: 20px;
+}
+.about h3::after{
+    content: url("rectangle.png");
+    position: relative;
+    top: -10;
+    margin-left: 20px;
+}
+.about .team{
+    overflow: hidden;
+}
+.about .team >div{
+    float: left;
+    width: 16%;
+}
+.about .team >div img{
+    border: 3px solid #FF5A0B;
+    margin-left: 50px;
+    opacity: .6;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 1s ease-in-out;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 30px;
+    transform: scale(1.2);
+    
+}
+.about .team >div img:hover{
+    opacity: 1; 
+    transform: scale(1);
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 120px 30px; 
+    border-bottom-left-radius: 120px 30px;
+    border-bottom-right-radius: 15px;
+
+}
+.contact{
+    width: 100%;
+    height: 550px;
+    background-color: #252B33;
+    color: #DEDEDE;
+    overflow: hidden;
+}
+.contact .left{
+    width: 33.33333%;
+    height: 100%;
+    float: left;
+}
+.contact .left h3,
+.contact .center h3,
+.contact .right h3
+
+{
+    margin: 30px 0 30px 30px;
+    font-family: Agency FB;
+    font-size: 30px;
+}
+.contact .left p{
+    color: #A1C7E5;
+    margin: 30px 0 30px 30px;
+    line-height: 1.3;
+    font-family:Andalus;
+}
+.contact .left h2{
+    color: #3D6E96;
+    margin: 30px 0 30px 30px;
+    font-family:Chiller;
+}
+.contact .left hr{
+      width: 330px;
+      margin-left: 25px;
+      background-color: #72859E;
+      height: 1px;
+      border: none;
+}
+.contact .center{
+     width: 33.33333%;
+    float: left;
+    height: 100%;
+}
+.contact .center .x:hover{
+    color: #3B5998;
+}
+.contact .center .xx:hover{
+    color: #29C5F6;
+}
+.contact .center .xxx:hover{
+    color: #DD332C;
+}
+.contact .center .xxxx:hover{
+    color: #D13E2F;
+}
+.contact .center .xxxxx:hover{
+    color: #DAA520;
+}
+.contact .right{
+     width: 33.33333%;
+    float: left;
+    height: 100%;
+}
+.contact .right input {
+    background-color: #32363D;
+    border: none;
+    padding: 20px;
+    width: 330px;
+    border: 1px solid #000;
+    border-radius: 5px;
+      margin: 2px 0px 4px 30px;
+    outline: none;
+}
+.contact .right textarea {
+    background-color: #32363D;
+    border: none;
+    border: 1px solid #000;
+    border-radius: 5px;
+      margin: 2px 0px 4px 30px;
+    resize: none;
+}
+.contact .right label{
+    font-size: 20px;
+      margin: 2px 0px 4px 30px;
+    font-family: Agency FB;
+    font-weight: bold;
+}
+.contact .right button{
+    margin: 20px 0px 4px 30px;
+    background-color: #3D6E96;
+    border: none;
+    color: #1F527B;
+    text-transform: uppercase;
+    padding: 7px;
+    width: 100px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    animation:hvr-wobble-to-top-right .9s;
+}
+.contact .right button:hover{
+    
+}
+.contact .right input:hover,
+.contact .right textarea:hover
+{
+border: 1px solid #3D6E96;
+}
+.footer{
+    width: 100%;
+    height: 50px;
+    background-color: #3C4149;
+    color: #DEDEDE;
+    padding: 7px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial Black;
+}
+.footer p span{
+    color: #A3C9E7;
+    font-family: chiller;
+    font-size: 31px;
+}
+
+
+
+
+@keyframes hvr-wobble-to-top-right {
+  16.65% {
+    -webkit-transform: translate(8px, -8px);
+    transform: translate(8px, -8px);
+  }
+  33.3% {
+    -webkit-transform: translate(-6px, 6px);
+    transform: translate(-6px, 6px);
+  }
+  49.95% {
+    -webkit-transform: translate(4px, -4px);
+    transform: translate(4px, -4px);
+  }
+  66.6% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+  83.25% {
+    -webkit-transform: translate(1px, -1px);
+    transform: translate(1px, -1px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+
+
+
+.hvr-float-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-float-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+  background: radial-gradient(ellipse at center, rgba(32, 152, 209, .9) 0%, transparent 80%);
+  /* W3C */                                       
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hvr-bounce-to-bottom {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hvr-bounce-to-bottom:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:#FF5A00 ;     /* #2098D1  */
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-bounce-to-bottom:hover, .hvr-bounce-to-bottom:focus, .hvr-bounce-to-bottom:active {
+  color: white;
+}
+.hvr-bounce-to-bottom:hover:before, .hvr-bounce-to-bottom:focus:before, .hvr-bounce-to-bottom:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
